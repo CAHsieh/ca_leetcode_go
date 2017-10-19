@@ -5,7 +5,9 @@ import (
 )
 
 func main() {
-	fmt.Println(climbStairs(1))
+	a := ListNode{Val: 1, Next: nil}
+	b := ListNode{Val: 2, Next: nil}
+	fmt.Println(mergeTwoLists(&a, &b).Val)
 }
 
 func max(x int, y int) int {
