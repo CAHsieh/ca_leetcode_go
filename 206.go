@@ -20,11 +20,10 @@ func reverseList(head *ListNode) *ListNode {
 	return step
 }
 
-func reverse(cur *ListNode, next *ListNode) {
-	if nil == next {
-		return
-	} else {
-		reverse(next, next.Next)
-		next.Next = cur
-	}
-}
+// func reverse(cur *ListNode, next *ListNode) {
+// 	if nil == next {
+// 		return
+// 	}
+// 	reverse(next, next.Next)
+// 	next.Next = cur
+// }

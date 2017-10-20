@@ -11,13 +11,13 @@ func diameterOfBinaryTree(root *TreeNode) int {
 	return max(rootDepth, subDepth)
 }
 
-func getDepth(node *TreeNode) int {
-	if nil == node {
-		return 0
-	} else {
-		return max(getDepth(node.Left)+1, getDepth(node.Right)+1)
-	}
-}
+// func getDepth(node *TreeNode) int {
+// 	if nil == node {
+// 		return 0
+// 	} else {
+// 		return max(getDepth(node.Left)+1, getDepth(node.Right)+1)
+// 	}
+// }
 
 // func max(x int, y int) int {
 // 	if x > y {

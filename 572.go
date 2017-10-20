@@ -27,7 +27,6 @@ func isSame(s *TreeNode, t *TreeNode) bool {
 	}
 	if s.Val != t.Val {
 		return false
-	} else {
-		return (isSame(s.Left, t.Left) && isSame(s.Right, t.Right))
 	}
+	return (isSame(s.Left, t.Left) && isSame(s.Right, t.Right))
 }

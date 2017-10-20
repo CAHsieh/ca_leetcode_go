@@ -19,7 +19,6 @@ func trace(node *TreeNode, sum int) int {
 	sum -= node.Val
 	if 0 == sum {
 		return 1 + (trace(node.Left, sum) + trace(node.Right, sum))
-	} else {
-		return (trace(node.Left, sum) + trace(node.Right, sum))
 	}
+	return (trace(node.Left, sum) + trace(node.Right, sum))
 }
