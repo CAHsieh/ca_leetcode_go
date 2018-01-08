@@ -9,10 +9,9 @@ func main() {
 	// b := ListNode{Val: 2, Next: &a}
 	// c := ListNode{Val: 2, Next: &b}
 	// d := ListNode{Val: 1, Next: &c}
-
-	ta := TreeNode{Val: 2, Left: nil, Right: nil}
-	tb := TreeNode{Val: 3, Left: nil, Right: nil}
-	tc := TreeNode{Val: 1, Left: &ta, Right: &tb}
+	//ta := TreeNode{Val: 2, Left: nil, Right: nil}
+	//tb := TreeNode{Val: 3, Left: nil, Right: nil}
+	//tc := TreeNode{Val: 1, Left: &ta, Right: &tb}
 
 	// fmt.Println(isPalindrome(&d))
 	// fmt.Println(countBits(5))
@@ -27,8 +26,9 @@ func main() {
 	// input = [][]int{{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}}
 	// rotate(input)
 	// fmt.Println(input)
+	// fmt.Println(isSameTree(&tc, &tc))
 
-	fmt.Println(isSameTree(&tc, &tc))
+	fmt.Println(combinationSum([]int{2, 3, 6, 7}, 7))
 }
 
 func max(x int, y int) int {
