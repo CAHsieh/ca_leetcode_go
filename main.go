@@ -5,11 +5,30 @@ import (
 )
 
 func main() {
-	a := ListNode{Val: 1, Next: nil}
-	b := ListNode{Val: 2, Next: &a}
-	c := ListNode{Val: 2, Next: &b}
-	d := ListNode{Val: 1, Next: &c}
-	fmt.Println(isPalindrome(&d))
+	// a := ListNode{Val: 1, Next: nil}
+	// b := ListNode{Val: 2, Next: &a}
+	// c := ListNode{Val: 2, Next: &b}
+	// d := ListNode{Val: 1, Next: &c}
+
+	ta := TreeNode{Val: 2, Left: nil, Right: nil}
+	tb := TreeNode{Val: 3, Left: nil, Right: nil}
+	tc := TreeNode{Val: 1, Left: &ta, Right: &tb}
+
+	// fmt.Println(isPalindrome(&d))
+	// fmt.Println(countBits(5))
+	// fmt.Println(reconstructQueue([][]int{{7, 0}, {4, 4}, {7, 1}, {5, 0}, {6, 1}, {5, 2}}))
+	// fmt.Println(countSubstrings("aaa"))
+	// fmt.Println(findCircleNum([][]int{{1, 0, 0, 1}, {0, 1, 1, 0}, {0, 1, 1, 1}, {1, 0, 1, 1}}))
+	// fmt.Println(topKFrequent([]int{3, 0, 1, 0}, 1))
+	// fmt.Println(generateParenthesis(3))
+	// input := [][]int{{1, 2, 3}, {4, 5, 6}, {7, 8, 9}}
+	// rotate(input)
+	// fmt.Println(input)
+	// input = [][]int{{1, 2, 3, 4}, {5, 6, 7, 8}, {9, 10, 11, 12}, {13, 14, 15, 16}}
+	// rotate(input)
+	// fmt.Println(input)
+
+	fmt.Println(isSameTree(&tc, &tc))
 }
 
 func max(x int, y int) int {
