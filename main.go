@@ -28,7 +28,10 @@ func main() {
 	// fmt.Println(input)
 	// fmt.Println(isSameTree(&tc, &tc))
 
-	fmt.Println(combinationSum([]int{2, 3, 6, 7}, 7))
+	// fmt.Println(combinationSum([]int{2, 3, 6, 7}, 7))
+	fmt.Println(canPartition([]int{1, 5, 11, 5}))
+	fmt.Println(canPartition([]int{1, 1}))
+	fmt.Println(canPartition([]int{1, 2, 5}))
 }
 
 func max(x int, y int) int {
