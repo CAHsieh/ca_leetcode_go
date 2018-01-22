@@ -1,11 +1,5 @@
 package main
 
-//Label used to record leader
-type Label struct {
-	root  *Label
-	label int
-}
-
 func findCircleNum(M [][]int) int {
 
 	labelSlice := make([]Label, len(M))

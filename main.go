@@ -9,9 +9,12 @@ func main() {
 	// b := ListNode{Val: 2, Next: &a}
 	// c := ListNode{Val: 2, Next: &b}
 	// d := ListNode{Val: 1, Next: &c}
-	//ta := TreeNode{Val: 2, Left: nil, Right: nil}
-	//tb := TreeNode{Val: 3, Left: nil, Right: nil}
-	//tc := TreeNode{Val: 1, Left: &ta, Right: &tb}
+	// ta := TreeNode{Val: 6, Left: nil, Right: nil}
+	// tb := TreeNode{Val: 4, Left: nil, Right: nil}
+	// tc := TreeNode{Val: 3, Left: nil, Right: nil}
+	// td := TreeNode{Val: 5, Left: nil, Right: &ta}
+	// te := TreeNode{Val: 2, Left: &tc, Right: &tb}
+	// tf := TreeNode{Val: 1, Left: &te, Right: &td}
 
 	// fmt.Println(isPalindrome(&d))
 	// fmt.Println(countBits(5))
@@ -29,9 +32,26 @@ func main() {
 	// fmt.Println(isSameTree(&tc, &tc))
 
 	// fmt.Println(combinationSum([]int{2, 3, 6, 7}, 7))
-	fmt.Println(canPartition([]int{1, 5, 11, 5}))
-	fmt.Println(canPartition([]int{1, 1}))
-	fmt.Println(canPartition([]int{1, 2, 5}))
+	// fmt.Println(canPartition([]int{1, 5, 11, 5}))
+	// fmt.Println(canPartition([]int{1, 1}))
+	// fmt.Println(canPartition([]int{1, 2, 5}))
+	// fmt.Println(groupAnagrams([]string{"eat", "tea", "tan", "ate", "nat", "bat"}))
+	// flatten(&tf)
+	// for tf.Right != nil {
+	// 	fmt.Println(tf.Val)
+	// 	tf = *tf.Right
+	// }
+	// fmt.Println(tf.Val)
+	// fmt.Println("")
+
+	// fmt.Println(numIslands([][]byte{{'1', '1', '1', '1', '0'}, {'1', '1', '0', '1', '0'},
+	// 	{'1', '1', '0', '0', '0'}, {'0', '0', '0', '0', '0'}}))
+	// fmt.Println(numIslands([][]byte{
+	// 	{'1', '0', '1', '1', '1'},
+	// 	{'1', '0', '1', '0', '1'},
+	// 	{'1', '1', '1', '0', '1'}}))
+
+	fmt.Println(letterCombinations("23"))
 }
 
 func max(x int, y int) int {
@@ -81,4 +101,11 @@ type TreeNode struct {
 type ListNode struct {
 	Val  int
 	Next *ListNode
+}
+
+//Label used to record leader
+type Label struct {
+	root  *Label
+	label int
+	rank  int
 }
