@@ -5,9 +5,9 @@ import (
 )
 
 func main() {
-	// a := ListNode{Val: 1, Next: nil}
-	// b := ListNode{Val: 2, Next: &a}
-	// c := ListNode{Val: 2, Next: &b}
+	a := ListNode{Val: 3, Next: nil}
+	b := ListNode{Val: 2, Next: &a}
+	c := ListNode{Val: 1, Next: &b}
 	// d := ListNode{Val: 1, Next: &c}
 	// ta := TreeNode{Val: 6, Left: nil, Right: nil}
 	// tb := TreeNode{Val: 4, Left: nil, Right: nil}
@@ -51,7 +51,9 @@ func main() {
 	// 	{'1', '0', '1', '0', '1'},
 	// 	{'1', '1', '1', '0', '1'}}))
 
-	fmt.Println(letterCombinations("23"))
+	// fmt.Println(letterCombinations("23"))
+
+	fmt.Println(removeNthFromEnd(&c, 3))
 }
 
 func max(x int, y int) int {
