@@ -5,9 +5,9 @@ import (
 )
 
 func main() {
-	a := ListNode{Val: 3, Next: nil}
-	b := ListNode{Val: 2, Next: &a}
-	c := ListNode{Val: 1, Next: &b}
+	// a := ListNode{Val: 3, Next: nil}
+	// b := ListNode{Val: 2, Next: &a}
+	// c := ListNode{Val: 1, Next: &b}
 	// d := ListNode{Val: 1, Next: &c}
 	// ta := TreeNode{Val: 6, Left: nil, Right: nil}
 	// tb := TreeNode{Val: 4, Left: nil, Right: nil}
@@ -53,7 +53,10 @@ func main() {
 
 	// fmt.Println(letterCombinations("23"))
 
-	fmt.Println(removeNthFromEnd(&c, 3))
+	// fmt.Println(removeNthFromEnd(&c, 3))
+
+	input := [][]int{{1, 3, 1}, {1, 5, 1}, {4, 2, 1}}
+	fmt.Println(minPathSum(input))
 }
 
 func max(x int, y int) int {
