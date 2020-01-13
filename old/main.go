@@ -1,14 +1,12 @@
 package main
 
-import (
-	"fmt"
-)
+import "fmt"
 
 func main() {
 	// a := ListNode{Val: 3, Next: nil}
-	// b := ListNode{Val: 2, Next: &a}
-	// c := ListNode{Val: 1, Next: &b}
-	// d := ListNode{Val: 1, Next: &c}
+	// b := ListNode{Val: 1, Next: &a}
+	// c := ListNode{Val: 2, Next: &b}
+	// d := ListNode{Val: 4, Next: &c}
 	// ta := TreeNode{Val: 6, Left: nil, Right: nil}
 	// tb := TreeNode{Val: 4, Left: nil, Right: nil}
 	// tc := TreeNode{Val: 3, Left: nil, Right: nil}
@@ -58,15 +56,30 @@ func main() {
 	// input := [][]int{{1, 3, 1}, {1, 5, 1}, {4, 2, 1}}
 	// fmt.Println(minPathSum(input))
 
-	nums := []int{1, 3, 5, 6}
-	fmt.Println(searchInsert(nums, 1))
-	fmt.Println(searchInsert(nums, 3))
-	fmt.Println(searchInsert(nums, 5))
-	fmt.Println(searchInsert(nums, 6))
+	// nums := []int{1, 3, 5, 6}
+	// fmt.Println(searchInsert(nums, 1))
+	// fmt.Println(searchInsert(nums, 3))
+	// fmt.Println(searchInsert(nums, 5))
+	// fmt.Println(searchInsert(nums, 6))
 
-	fmt.Println(searchInsert(nums, 0))
-	fmt.Println(searchInsert(nums, 2))
-	fmt.Println(searchInsert(nums, 7))
+	// fmt.Println(searchInsert(nums, 0))
+	// fmt.Println(searchInsert(nums, 2))
+	// fmt.Println(searchInsert(nums, 7))
+
+	// input := [][]int{{1, 0}, {0, 1}}
+	// fmt.Println(canFinish(2, input))
+	// input = [][]int{{1, 0}}
+	// fmt.Println(canFinish(2, input))
+
+	// input := []Interval{{1, 3}, {2, 6}, {8, 10}, {15, 18}}
+	// fmt.Println(merge(input))
+	// input = []Interval{{1, 4}, {0, 1}}
+	// fmt.Println(merge(input))
+
+	// fmt.Println(sortList(&d))
+	// fmt.Println("End")
+
+	fmt.Println(numJewelsInStones("aA", "aAAbbbb"))
 }
 
 func max(x int, y int) int {
@@ -123,4 +136,9 @@ type Label struct {
 	root  *Label
 	label int
 	rank  int
+}
+
+type Interval struct {
+	Start int
+	End   int
 }
